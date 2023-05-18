@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>REGISTRATION</title>
+        <style>
+            tr{
+                height:100px;
+            }
+            td{
+                width:10%;
+            }
+            form {
+                width: 800px;
+                margin-left: 20%;
+            }
+            input{
+                border: 2px solid black;
+                height: 40px;
+            }
+            textarea{
+                border: 2px solid black;
+            }
+
+
+        </style>
+    </head>
+    <body style="background-color: rgb(61, 140, 174);font-size:15px">
+        <center><h1 style="font-family: cursive">REGISTRATION FORM</h1></center>
+
+        <form name="RegForm" action = "validate.php" method="post">
+        <table>
+            <tr>
+            <td><b> Name:</b></td>
+            <td><input type="text" size="50" name="name" /><br>
+            </tr>
+
+            <br>
+
+            <tr>
+            <td><b> E-mail Address: </b></td>
+            <td><input type="email" name="email" size = "50"/><br>
+            </tr>
+            <br/>
+
+            <tr>
+            <td><b>User Name: </b></td>
+            <td> <input type="text" name="username" size="50" /><br>
+            </tr>
+
+            <br>
+
+            <tr>
+            <td><b> Password: </b></td>
+            <td><input type="password" size="50" name="password" /><br>
+            </tr>
+
+            <br>
+
+            <tr>
+            <td><b> Phone Number: </b>
+            <td><input type="text" size="50" name="mobileno" /><br>
+            </tr>
+
+            <br>
+
+        </table>
+        <br><br><br>
+        <p> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        <input type="submit" style="width:120px;
+        font-size:20px" value="Submit" name="submit" />
+        </p>
+        </form>
+    </body>
+</html>

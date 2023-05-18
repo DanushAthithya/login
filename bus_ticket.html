@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus Ticket Booking</title>
+</head>
+<body>
+    <h1>Bus Ticket Booking</h1>
+    <form action="book_ticket.php" method="post">
+        <label for="from_place">From Place:</label>
+        <select id="from_place" name="from_place">
+            <!-- Fetch and display available from places from the database -->
+            <?php
+$conn = mysqli_connect("localhost", "root", "", "bus_tickets"); // Update database connection details
+
+// Fetch and return available places as options
+$options = '';
+$result = mysqli_query($conn, "SELECT DISTINCT from_place, to_place FROM bus_tickets");
+while ($row = mysqli_fetch_assoc($result)) {
+    $options .= '<option  value="' . $row['from_place'] . '">' . $row['from_place'] . '</option>';
+    <!-- $options .= '<option  value="' . $row['to_place'] . '">' . $row['to_place'] . '</option>'; -->
+}
+mysqli_close($conn);
+
+echo $options;
+?>
+        </select>
+        <br>
+        <label for="to_place">To Place:</label>
+        <select id="to_place" name="to_place">
+            <!-- Fetch and display available to places from the database -->
+            <?php include 'fetch_places.php'; ?>
+        </select>
+        <br>
+        <label for="num_tickets">Number of Tickets:</label>
+        <input type="number" id="num_tickets" name="num_tickets" min="1" max="10">
+        <br>
+        <input type="submit" value="Book Tickets">
+    </form>
+</body>
+</html>

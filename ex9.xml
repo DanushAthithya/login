@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="ex10_user.xsl"?>
+<bio>
+<!--Each user has an Genre, name and IMDB-->
+<user>
+<Genre>Histroical</Genre>
+<name>PonniyinSelvan-2</name>
+<IMDB>7.5</IMDB>
+</user>
+<user>
+<Genre>Rom Com</Genre>
+<name>Love Today</name>
+<IMDB>8</IMDB>
+</user>
+<user>
+<Genre>Historical</Genre>
+<name>PonniyinSelvan-1</name>
+<IMDB>7.8</IMDB>
+</user>
+<user>
+<Genre>Crime Drama</Genre>
+<name>Pathu Thala</name>
+<IMDB>7.3</IMDB>
+</user>
+<user>
+<Genre>Drama</Genre>
+<name>Varisu</name>
+<IMDB>7</IMDB>
+</user>
+<user>
+<Genre>Action Drama</Genre>
+<name>Thunivu</name>
+<IMDB>7</IMDB>
+</user>
+<user>
+<Genre>Crime Action</Genre>
+<name>Kalaga Thalaivan</name>
+<IMDB>8</IMDB>
+</user>
+<user>
+<Genre>Crime Action</Genre>
+<name>Vikram</name>
+<IMDB>8.3</IMDB>
+</user>
+<user>
+<Genre>Crime</Genre>
+<name>Viduthalai</name>
+<IMDB>8.7</IMDB>
+</user>
+<user>
+<Genre>Drama</Genre>
+<name>Vaathi</name>
+<IMDB>7.5</IMDB>
+</user>
+</bio>
