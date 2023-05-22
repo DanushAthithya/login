@@ -2,30 +2,30 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Movie Details</title>
+<title>Player Details</title>
 </head>
 <body style="font-size:25px;background-color:rgb(65, 152, 176);">
 <?php
 $xml_data=simplexml_load_file("ex9.xml");
-$name=$_POST['movie_name'];
+$name=$_POST['player_name'];
 $flag=0;
 foreach($xml_data->children() as $user)
 {
 if($user->name==$name)
 {?>
-<h1 align="center">MOVIE DETAILS</h1>
+<h1 align="center">PLAYER DETAILS</h1>
 <table align="center" style="font-size:25px;">
 <tr>
-<td><b>GENRE</b></td><td><b>:</b></td>
-<td><?php echo $user->Genre?></td>
+<td><b>AGE</b></td><td><b>:</b></td>
+<td><?php echo $user->Age?></td>
 </tr>
 <tr>
 <td><b>NAME</b></td><td><b>:</b></td>
 <td><?php echo $user->name?></td>
 </tr>
 <tr>
-<td><b>IMDB:</b></td><td><b>:</b></td>
-<td><?php echo $user->IMDB?></td>
+<td><b>HEIGHT</b></td><td><b>:</b></td>
+<td><?php echo $user->Height?></td>
 </tr>
 </table>
 <?php $flag=1;
